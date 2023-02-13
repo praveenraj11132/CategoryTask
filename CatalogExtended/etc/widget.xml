@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget_file.xsd">
+    <widget id="catalog_recently_viewed">
+        <parameters>
+            <parameter name="show_attributes" xsi:type="multiselect" required="true" visible="true">
+                <options>
+                    <option name="sku" value="sku">
+                        <label translate="true">SKU</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="show_buttons" xsi:type="multiselect" required="false" visible="true" />
+        </parameters>
+    </widget>
+</widgets>

@@ -1,0 +1,18 @@
+<?php
+/**
+ * @var \Wheelpros\CatalogExtended\Block\Category\Brands $block
+ */
+?>
+<?php if ($block->getCurrentCategory()->getName() == 'All Brands'): ?>
+    <div class="brand-list">
+        <?php foreach ($block->getSiblingIds() as $categoryId): ?>
+            <?php if ($block->getCurrentCategory()->getId() != $categoryId): ?>
+                <?php $categoryData = $block->getCategoryDataById($categoryId); ?>
+                <div><?php echo $categoryData->getName() ?></div>
+                <div class="category-image" onclick="window.location.href='<?php echo $categoryData->getUrl(); ?>'">
+                    <img src="<?= $categoryData->getImageUrL();?>" width="150px" height="150px" alt="image"/>
+                </div>
+            <?php endif; ?>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>

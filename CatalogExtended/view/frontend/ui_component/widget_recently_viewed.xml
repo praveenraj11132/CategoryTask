@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="widget_columns" component="Magento_Catalog/js/product/list/listing" template="Magento_Catalog/product/list/listing">
+        <column name="sku" component="Magento_Catalog/js/product/name" sortOrder="2" displayArea="details-area">
+            <settings>
+                <label translate="true">SKU</label>
+                <bodyTmpl>Magento_Catalog/product/name</bodyTmpl>
+            </settings>
+        </column>
+    </columns>
+</listing>

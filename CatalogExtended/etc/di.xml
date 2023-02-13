@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Wheelpros\CatalogExtended\Api\Data\ProductImageInterface"
+                type="Wheelpros\CatalogExtended\Model\Data\ProductImage" />
+    <preference for="Wheelpros\CatalogExtended\Api\Data\StatusInterface"
+                type="Wheelpros\CatalogExtended\Model\Data\Status" />
+    <preference for="Wheelpros\CatalogExtended\Api\ProductImageManagementInterface"
+                type="Wheelpros\CatalogExtended\Model\ProductImageManagement" />
+</config>
+
+
